@@ -14,3 +14,7 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+*.fdb_latexmk
+*.lg
+*.idv
+*.synctex.gz

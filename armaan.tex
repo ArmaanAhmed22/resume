@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Armaan (from Sourabh Bajaj's resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://ahmed.science/}{\Large Armaan Ahmed}} & Email : \href{mailto:aahmed68@jh.edu}{aahmed68@jh.edu}\\
+  \href{http://ahmed.science/}{http://www.ahmed.science} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Johns Hopkins University}{Baltimore, MD}
+      {Bachelor of Science in Biomedical Engineering and Bachelor of Arts in Biophysics;  GPA: 4.00}{Aug. 2022 -- June 2026}
+    \resumeSubheading
+      {Scarsdale High School}{Scarsdale, NY}
+      {High School Diploma;  GPA: 4.00 (4.15/4.30)}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+\section{Skill Set}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Programming:}
+        {Python, Java, Bash, Javascript, HTML, CSS, Rust (learning)}
+      \resumeSubItem{Typesetting:}
+        {LaTeX, Markdown, Microsoft Office, LibreOffice}
+      \resumeSubItem{Research:} {Bioinformatics, Amplification techniques (PCR, LAMP, SHARP), Nanopore sequencing, Cas12b}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Taekjip Ha Lab}{Baltimore, MD}
+      {Student Researcher}{Oct 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Rational protein engineering}
+          {Worked with graduate student Jimin Kang to computationally design thermostable DNMT1 methyltransferase variants. Generated in silico mutation libraries and selected top candidatesby using metal cofactor, DNA, and SAM binding screens. Performed MD simulations to verify thermostability.}
+        \resumeItem{Maintaining methylation markers during amplification}
+          {Designed candidate target and primers to verify above results in vitro. Performed and optimized 37 $^\circ$C SHARP amplification, an in-house method to isothermally amplify DNA. Performed protein purification.}
+      \resumeItemListEnd
+
+    \resumeSubheading{Elmhurst Hospital Bioinformatician}{Queens, NY}{Student Researcher}{Jul 2022 - Present}
+    \resumeItemListStart
+      \resumeItem{Cancer database exploratory analysis}
+        {Performed database and survival analysis on cancer cases. Analyzed survival difference depending on hospital accreditation status. Conducted all statistical analyses, wrote a manuscript on the results, and submitted poster to the International Conference on Surgical Cancer Care}
+    \resumeItemListEnd
+
+    \resumeSubheading{Wigdahl Lab}{Philadelphia, PA}{Student Researcher}{Mar 2020 - Jun 2022}
+    \resumeItemListStart
+      \resumeItem{Computational design of robust diagnostic tool}{Conducted bioinformatic research under Dr. Will Dampier at the Wigdahl Laboratory developing clinically relavent probes against HIV-1 drug resistance using the novel SHERLOCK technology. Designed varient-resistant LAMP primers and gRNAs.}
+      \resumeItem{In vitro validation}{
+      Conducted in vitro research throughout the 2021 summer and six weeks from May to June, 2022 (40+ hrs/week). Performed Cas12b activity analysis and PCR and LAMP amplification. Wrote first-author manuscript and presented at multiple conferences and competitions}
+
+      \resumeItem{Patient-varient HIV-1 amplification and sequencing}{Performed PCR amplification of patient HIV-1 samples and ran a subset of them through a Nanopore sequencer}
+    \resumeItemListEnd
+
+    \resumeSubheading{Science Research}{Scarsdale, NY}{Science Research Mentor}{Oct 2020 - March 2022}
+    \resumeItemListStart
+      \resumeItem{Mentoring high school students in research}{Supervised high school mentees to prepare them for their research experience,Reviewed their projects/presentations and delivered feedback}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Conferences and Workshops}
+  \begin{enumerate}[leftmargin=*]
+  \resumeSubItem{}
+    {\textbf{Ahmed, A}. \& Shafaee, Z. (2023). Impact of Commission on Cancer Accreditation on Cancer Survival: A SEER Database Analysis. International Conference on Surgical Cancer Care, Boston.}
+  \resumeSubItem{}
+    {Berman, R., Dampier, W., Atkins, A., Allen, A., Pirrone, V., Passic, S., \textbf{Ahmed, A.}, Szep, Z., Nonnemacher, M., \& Wigdahl, B. (2022). PP 6.5-00205 Utilization of high-throughput assays and deep-learning for selection of CRISPR/Cas9-gRNA pairs used in an HIV-1 cure strategy. Tenth International Workshop on HIV Persistence during Therapy, Miami.}
+  \resumeSubItem{}
+    {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). Design of a SHERLOCK-based low resource screening assay for HIV-1 drug resistance. Discovery Day 2021, Philadelphia, PA, USA. Zenodo, \href{https://doi.org/10.5281/zenodo.5719853}{https://doi.org/10.5281/zenodo.5719853}}
+  \resumeSubItem{}
+    {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). In silico design of a SHERLOCK-based point-of-care diagnostic for HIV-1 drug resistance. 17\textsuperscript{th} International Symposium on NeuroVirology (ISNV), Virtual. Zenodo, \href{https://doi.org/10.5281/zenodo.5719377}{https://doi.org/10.5281/zenodo.5719377}}
+  \resumeSubItem{}{\textbf{Ahmed, A.}, Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2020). Design of a low resource screening technology for HIV drug resistance using SHERLOCK. Discovery Day 2020, Virtual. Zenodo. \href{https://doi.org/10.5281/zenodo.5719377}{https://doi.org/10.5281/zenodo.5719377}}
+  \end{enumerate}
+
+%-----------PROJECTS-----------------
+\section{Projects (Clickable)}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://ahmed.science}{Website}:}
+      {Designed a personal portfolio using the Django Python framework.}
+    \resumeSubItem{\href{https://github.com/ArmaanAhmed22/CompareCoCversusNonCoC}{Hospital Accreditation Comparison}:}
+      {Comparison of survival rates between hospitals with and without CoC accreditation.}
+    \resumeSubItem{\href{https://github.com/ArmaanAhmed22/VariabilityAnalyzer}{Variability Analyzer}:}
+      {Tool to analyze variability and entropy of genomic sequences}
+    \resumeSubItem{\href{https://github.com/ArmaanAhmed22/NonSpecificLAMPDesign}{LAMP primer design for quasispecies amplification}:}
+      {Designed a system to generate sensitive LAMP primers, able to overcome target variability.}
+    \resumeSubItem{\href{https://github.com/ArmaanAhmed22/ReactionMechanizer}{ReactionMechnizer}:}
+      {Created a program to simulate chemical reactions and analyze kinetics.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+\section{Awards}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{Dean's List}{Baltimore, MD}{The Johns Hopkins University}{Jan 2023}
+
+    \resumeSubheading
+      {Outstanding Academic Performance and Interest in Science}{Scarsdale, NY}
+      {Science Department of Scarsdale High School}{May 2022}
+
+    \resumeSubheading{Outstanding Academic Performance and Interest in Mathematics}{Scarsdale, NY}{Mathematics Department of Scarsdale High School}{May 2022}
+
+    \resumeSubheading{2\textsuperscript{nd} Place in Cellular \& Molecular Biology}{Westchester, NY}{Westchester Science and Engineering Fair (WESEF)}{Mar 2022}
+
+    \resumeSubheading{3\textsuperscript{rd} Place in Computational Biology/Bioinformatics}{Westchester, NY}{Junior Science and Humanities Symposium (JSHS)}{Feb 2022}
+
+    \resumeSubheading{Regeneron STS Semifinalist}{}{Society For Science}{Jan 2022}
+
+    \resumeSubheading{1\textsuperscript{st} Place for Outstanding High School Poster}{Philadelphia, NY}{Discovery Day 2021, Drexel University}{Oct 2021}
+
+  \resumeSubHeadingListEnd
+
+
+\end{document}
