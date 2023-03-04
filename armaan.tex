@@ -8,7 +8,7 @@
 
 
 \usepackage{filemod}
-
+\usepackage{ragged2e}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -22,6 +22,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{makecell}
+
 
 
 
@@ -72,9 +74,9 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \makecell[l]{\textit{\small#3}} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -88,14 +90,15 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,rightmargin=\dimexpr\linewidth-0.9\textwidth-\leftmargin\relax]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=\dimexpr\linewidth-0.75\textwidth-\leftmargin\relax]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -103,16 +106,17 @@
   \href{http://ahmed.science/}{http://www.ahmed.science} \\
 \end{tabular*}
 
-
+\justifying
+\emergencystretch=1em
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {The Johns Hopkins University}{Baltimore, MD}
-      {Bachelor of Science in Biomedical Engineering and Bachelor of Arts in Biophysics;  GPA: 4.00}{Aug. 2022 -- June 2026}
+      {B.S. in Biomedical Engineering and B.A. in Biophysics; 4.00 GPA}{Aug. 2022 -- June 2026}
     \resumeSubheading
       {Scarsdale High School}{Scarsdale, NY}
-      {High School Diploma;  GPA: 4.00 (4.15/4.30)}{Aug. 2008 -- July. 2012}
+      {High School Diploma;  4.00 (4.15/4.30) GPA}{Aug. 2008 -- July. 2012}
   \resumeSubHeadingListEnd
 
 \section{Skill Set}
@@ -165,13 +169,14 @@
   \resumeSubItem{}
     {\textbf{Ahmed, A}. \& Shafaee, Z. (2023). Impact of Commission on Cancer Accreditation on Cancer Survival: A SEER Database Analysis. International Conference on Surgical Cancer Care, Boston.}
   \resumeSubItem{}
-    {Berman, R., Dampier, W., Atkins, A., Allen, A., Pirrone, V., Passic, S., \textbf{Ahmed, A.}, Szep, Z., Nonnemacher, M., \& Wigdahl, B. (2022). PP 6.5-00205 Utilization of high-throughput assays and deep-learning for selection of CRISPR/Cas9-gRNA pairs used in an HIV-1 cure strategy. Tenth International Workshop on HIV Persistence during Therapy, Miami.}
+    {Berman, R., Dampier, W.,... \textbf{Ahmed, A.}, Szep, Z., Nonnemacher, M., \& Wigdahl, B. (2022). PP 6.5-00205 Utilization of high-throughput assays and deep-learning for selection of CRISPR/Cas9-gRNA pairs used in an HIV-1 cure strategy. Tenth International Workshop on HIV Persistence during Therapy, Miami.}
   \resumeSubItem{}
     {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). Design of a SHERLOCK-based low resource screening assay for HIV-1 drug resistance. Discovery Day 2021, Philadelphia, PA, USA. Zenodo, \href{https://doi.org/10.5281/zenodo.5719853}{https://doi.org/10.5281/zenodo.5719853}}
   \resumeSubItem{}
     {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). In silico design of a SHERLOCK-based point-of-care diagnostic for HIV-1 drug resistance. 17\textsuperscript{th} International Symposium on NeuroVirology (ISNV), Virtual. Zenodo, \href{https://doi.org/10.5281/zenodo.5719377}{https://doi.org/10.5281/zenodo.5719377}}
   \resumeSubItem{}{\textbf{Ahmed, A.}, Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2020). Design of a low resource screening technology for HIV drug resistance using SHERLOCK. Discovery Day 2020, Virtual. Zenodo. \href{https://doi.org/10.5281/zenodo.5719377}{https://doi.org/10.5281/zenodo.5719377}}
   \end{enumerate}
+  \vspace{-20pt}
 
 %-----------PROJECTS-----------------
 \section{Projects (Clickable)}
@@ -233,7 +238,7 @@
 
     \resumeSubheading{3\textsuperscript{rd} Place in Computational Biology/Bioinformatics}{Westchester, NY}{Junior Science and Humanities Symposium (JSHS)}{Feb 2022}
 
-    \resumeSubheading{Regeneron STS Semifinalist}{}{Society For Science}{Jan 2022}
+    \resumeSubheading{Regeneron STS Semifinalist}{Washington D.C.}{Society For Science}{Jan 2022}
 
     \resumeSubheading{1\textsuperscript{st} Place for Outstanding High School Poster}{Philadelphia, NY}{Discovery Day 2021, Drexel University}{Oct 2021}
 
