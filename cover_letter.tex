@@ -1,0 +1,129 @@
+%-------------------------
+% Resume in Latex
+% Author : Armaan (from Sourabh Bajaj's resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{filemod}
+\usepackage{ragged2e}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{makecell}
+
+
+
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \makecell[l]{\textit{\small#3}} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,rightmargin=\dimexpr\linewidth-0.9\textwidth-\leftmargin\relax]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=\dimexpr\linewidth-0.75\textwidth-\leftmargin\relax]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://ahmed.science/}{\Large Armaan Ahmed}} & Email : \href{mailto:aahmed68@jh.edu}{aahmed68@jh.edu}\\
+  \href{http://ahmed.science/}{http://www.ahmed.science} \\
+\end{tabular*}
+
+\justifying
+\emergencystretch=1em
+
+%-----------EDUCATION-----------------
+\section{Cover Letter}
+
+To Dr. Noble:
+
+I am a Sophomore at the Johns Hopkins University majoring in Biomedical Engineering and Biophysics, and I am looking for an undergraduate research position at your lab. I seek to become a physician-scientist (MD/PhD) and, in part, desire to understand cancer etiology and dynamics at greater depth. This is informed by my two recent research experiences.
+
+First, I have volunteered and conducted epidemiological research at Elmhurst Hospital, NY. I investigated the effect of center accreditation on oncological outcome, and I have performed an in-house investigation on management and referral patterns for patients with appendiceal tumors, using Python for analyses. I have enjoyed performing these works since they directly relate to areas in which cancer care can be improved (for example, long-term follow-up rates for cancerous appendiceal tumors should be increased). Though, these have been descriptive analyses and as such did not have a more satisfying causal nor theoretical underpinning.
+
+Second, I have worked in the Zhang Lab at Johns Hopkins to investigate the crystallization behavior of a \textit{de novo} protein. This work relies on course-grained simulations to define the simplest possible protein model that reproduces the unique experimental behavior (namely, the protein going from solvated to liquid to crystal state). This type of model building and analyzing consequences of assumptions made is quite satisfying!
+
+Finally, I do have a great desire in applying my analytic skills to research. I strive to take a variety of more theoretically-oriented courses, like Honors Linear Algebra, Honors Multivariable Calculus, Probability (the AMS version), and Ordinary Differential Equations, and these have been some of my favorite courses. 
+
+One of your recent works that I have enjoyed reading was ``Selective sweep probabilities in spatially expanding populations,'' and I was quite surprised that the mathematical analysis of your model in the methods section was in fact quite tractable and that a seemingly tight upper bound for the clonal sweep probability depended only on wild-type and mutant fitness values.
+
+So, I believe that joining your lab will allow me to combine these experiences and more formally develop my general academic interests, perhaps under the themes of ``Dynamics of somatic evolution'' or ``Forecasting tumour evolution''.  Thank you for taking the time to read this letter.
+
+\end{document}
