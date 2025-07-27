@@ -24,6 +24,7 @@
 \usepackage{multicol}
 \usepackage{makecell}
 \usepackage{enumitem}
+\usepackage{lastpage}
 
 \usepackage[symbol]{footmisc}
 
@@ -35,6 +36,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\fancyfoot[R]{\makebox[0pt][l]{\hspace{0.8in}\thepage/\pageref{LastPage}}}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -109,7 +111,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Armaan Ahmed} & Email : \href{mailto:aahmed68@jh.edu}{aahmed68@jh.edu}\\
+  \textbf{\Large Armaan Ahmed} & Email: \href{mailto:aahmed68@jh.edu}{aahmed68@jh.edu}\\
   \href{http://ahmed.science/}{http://www.ahmed.science} \\
 \end{tabular*}
 
@@ -127,13 +129,11 @@
       {High School Diploma;  4.00 (4.15/4.30) GPA}{Aug. 2018 -- July. 2022}
   \resumeSubHeadingListEnd
 
-\section{Skill Set}
+\section{Skill Set and Interests}
   \resumeSubHeadingListStart
       \resumeSubItem{Programming: }
-        {Python, Java, Bash, Javascript, HTML, CSS}
-      \resumeSubItem{Typesetting: }
-        {LaTeX, Markdown, Microsoft Office, LibreOffice}
-      \resumeSubItem{Research: } {Stochastic Processes, Probability, Molecular Dynamics, Monte Carlo Simulations, Wet-lab techniques}
+        {Python, Java, Bash, C++, Javascript}
+      \resumeSubItem{Research: } {Cancer/Population Models, Stochastic Processes, Analysis, Probability, Monte Carlo Simulations}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -157,10 +157,18 @@
     \resumeItemListEnd
 
     \resumeSubheading
+      {Foo Lab}{Minneapolis, MN}
+      {Student Researcher}{Jan 2025 - Present}
+      \resumeItemListStart
+        \resumeItemSpace{Investigating effect of senescent cells on tumor and cancer-treatment dynamics:}
+          {Leading a project investigating theoretical therapeutic strategies containing both anti-cancer and senolytic treatments to effectively reduce the tumor burden.}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Noble Lab}{London, England}
       {Student Researcher}{Feb 2024 - Present}
       \resumeItemListStart
-        \resumeItemSpace{Investigating properties of a universal tree balance index}
+        \resumeItemSpace{Investigating properties of a universal tree balance index:}
           {Performing analytical work to investigate expected values of the $J_1$ index, along with minimal values in a special class of trees.}
         \resumeItemSpace{Investigating extinction therapy:}
           {Used simulations and analytical work to understand the theoretical merits of a two-sequence cancer therapy, where the second drug is applied whilst the tumor is still undetectable.}
@@ -168,7 +176,7 @@
 
     \resumeSubheading
       {Yaojun Zhang Lab}{Baltimore, MD}
-      {Student Researcher}{Apr 2023 - Present}
+      {Student Researcher}{Apr 2023 - Mar 2025}
       \resumeItemListStart
         \resumeItemSpace{Studying protein phase separation:}
           {Using course-grained molecular dynamics simulations (LAMMPS) to understand the two-step path a \textit{de novo} protein undertakes during crystallization. Relevant modeling parameters are informed from experimental data, docking, and atomistic simulations.}
@@ -197,25 +205,18 @@
         {Performed an in-house retrospective chart review of all appendiceal neoplasms. Investigated patterns of presentation, referral, and management.}
     \resumeItemListEnd
 
-    \resumeSubheading{Wigdahl Lab}{Philadelphia, PA}{Student Researcher}{Mar 2020 - Jun 2022}
-    \resumeItemListStart
-      \resumeItemSpace{Computational design of robust diagnostic tool:}{Conducted bioinformatic research under Dr. Will Dampier at the Wigdahl Laboratory developing clinically relavent probes against HIV-1 drug resistance using the novel SHERLOCK technology. Designed varient-resistant LAMP primers and gRNAs.}
-      \resumeItemSpace{In vitro validation:}{
-      Conducted in vitro research throughout the 2021 summer and six weeks from May to June, 2022 (40+ hrs/week). Performed Cas12b activity analysis and PCR and LAMP amplification. Wrote first-author manuscript (unpublished) and presented at multiple conferences and competitions}
-
-      \resumeItemSpace{Patient-varient HIV-1 amplification and sequencing:}{Performed PCR amplification of patient HIV-1 samples and ran a subset of them through a Nanopore sequencer}
-    \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 \section{Manuscripts}
   \begin{enumerate}[leftmargin=*]
   \resumeSubItem{}
-    {Manojlovi\'c, V.*, \textbf{Ahmed, A.*}, Viossat, Y., Noble, R. (2024). Expected and minimal values of a universal tree balance index. \textit{In preparation}.}\footnotetext[1]{These authors contributed equally to the work.}
+    {\textbf{Ahmed, A.}, \& Foo, J. (2025). A Theoretical Investigation into Incorporating Senolytics into Anti-Cancer Therapies. \textit{In preparation}.}
   \resumeSubItem{}
-    {Patil, S., \textbf{Ahmed, A.}, Viossat, Y., \& Noble, R. (2024). Preventing Evolutionary Rescue In Cancer. \textit{biorxiv}. doi:\href{https://doi.org/10.1101/2023.11.22.568336 }{10.1101/2023.11.22.568336}. \textit{(Currently Submitting)}}
+    {Manojlovi\'c, V.*, \textbf{Ahmed, A.*}, Viossat, Y., Noble, R. (2025). Expected and minimal values of a universal tree balance index. \textit{arXiv}. doi:\href{https://arxiv.org/abs/2507.08615}{\underline{10.48550/arXiv.2507.08615}}. \textit{(Currently Submitting)}}\footnotetext[1]{These authors contributed equally to the work.}
   \resumeSubItem{}
-    {\textbf{Ahmed, A.}, Whittington, J., \& Shafaee, Z. (2023). Impact of Commission on Cancer Accreditation on Cancer Survival: A SEER Database Analysis. \textit{Annals of Surgical Oncology}. doi:\href{https://doi.org/10.1245/s10434-023-14709-4}{10.1245/s10434-023-14709-4}}
+    {Patil, S., \textbf{Ahmed, A.}, Viossat, Y., \& Noble, R. (2024). Preventing Evolutionary Rescue In Cancer. \textit{biorxiv}. doi:\href{https://doi.org/10.1101/2023.11.22.568336 }{\underline{10.1101/2023.11.22.568336}}. \textit{(Review  \& Resubmit to Genetics)}}
+  \resumeSubItem{}
+    {\textbf{Ahmed, A.}, Whittington, J., \& Shafaee, Z. (2023). Impact of Commission on Cancer Accreditation on Cancer Survival: A SEER Database Analysis. \textit{Annals of Surgical Oncology}. doi:\href{https://doi.org/10.1245/s10434-023-14709-4}{\underline{10.1245/s10434-023-14709-4}}}
   \end{enumerate}
   \vspace{-4pt}
 
@@ -241,12 +242,6 @@
     {Kang, J., Mom\u cilo, G., Urteaga, R. M., \textbf{Ahmed, A.}, \& Ha, T. (2023). Engineered Helicase Replaces Thermocycler in DNA Amplification. The UKC.}
   \resumeSubItem{}
     {\textbf{Ahmed, A}. \& Shafaee, Z. (2023). Impact of Commission on Cancer Accreditation on Cancer Survival: A SEER Database Analysis. International Conference on Surgical Cancer Care, Boston. doi:\href{https://doi.org/10.1245/s10434-023-13332-7}{10.1245/s10434-023-13332-7}}
-  \resumeSubItem{}
-    {Berman, R., Dampier, W.,... \textbf{Ahmed, A.}, Szep, Z., Nonnemacher, M., \& Wigdahl, B. (2022). PP 6.5-00205 Utilization of high-throughput assays and deep-learning for selection of CRISPR/Cas9-gRNA pairs used in an HIV-1 cure strategy. Tenth International Workshop on HIV Persistence during Therapy, Miami. doi:\href{https://doi.org/10.1016/j.jve.2022.100258}{10.1016/j.jve.2022.100258}}
-  \resumeSubItem{}
-    {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). Design of a SHERLOCK-based low resource screening assay for HIV-1 drug resistance. Discovery Day 2021, Philadelphia, PA, USA. Zenodo, \href{https://doi.org/10.5281/zenodo.5719853}{https://doi.org/10.5281/zenodo.5719853}}
-  \resumeSubItem{}
-    {\textbf{Ahmed, A.}, De Souza, D. R., Link, R. W., Nonnemacher, M. R., Wigdahl, B., \& Dampier, W. (2021). In silico design of a SHERLOCK-based point-of-care diagnostic for HIV-1 drug resistance. 17\textsuperscript{th} International Symposium on NeuroVirology (ISNV), Virtual. Zenodo, \href{https://doi.org/10.5281/zenodo.5719377}{https://doi.org/10.5281/zenodo.5719377}}
   \end{enumerate}
 
 %-----------PROJECTS-----------------
@@ -278,6 +273,7 @@
 
 
 %-------------------------------------------
+\newpage
 
 \section{Relevant Coursework}
 
